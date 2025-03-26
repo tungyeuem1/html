@@ -15,5 +15,6 @@ function findPrimes(N) {
     }
     return primes;
 }
-console.log(findPrimes(120)); 
+ n = parseInt(prompt("Nhập số N:"));
+console.log(findPrimes(n)); 
 
