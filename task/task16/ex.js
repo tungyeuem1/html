@@ -6,15 +6,11 @@ function taxiBill(km) {
         if(km[i] < 0){
             console.log("Số km không hợp lệ");
         }
-        else
-        if (km[i] <= 1) {
-            money = 5000;
+        else if (1<=km[i] <= 10) {
+            money = 10000 + (km[i] - 1) * 8000 ;
             console.log(`Số tiền phải trả cho ${i + 1} chuyến đi là: ${money}đ`);
-        } else if (km[i] <= 30) {
-            money = 5000 + (km[i] - 1) * 4000;
-            console.log(`Số tiền phải trả cho ${i + 1} chuyến đi là: ${money}đ`);
-        } else {
-            money = 5000 + 29 * 4000 + (km[i] - 30) * 3000;
+        } else  {
+            money = 10000 + 9 * 8000 + (km[i] - 30) * 7000;
             console.log(`Số tiền phải trả cho ${i + 1} chuyến đi là: ${money}đ`);
         }
        
