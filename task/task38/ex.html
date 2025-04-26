@@ -64,13 +64,9 @@
     <script>document.querySelectorAll(".accordion-question").forEach((question) => {
         question.addEventListener("click", () => {
           const activeAnswer = document.querySelector(".accordion-answer.active");
-      
-          // Nếu có câu trả lời đang mở, đóng nó lại
           if (activeAnswer && activeAnswer !== question.nextElementSibling) {
             activeAnswer.classList.remove("active");
           }
-      
-          // Mở hoặc đóng câu trả lời tương ứng với câu hỏi được nhấp
           const answer = question.nextElementSibling;
           answer.classList.toggle("active");
         });
